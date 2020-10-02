@@ -1,0 +1,16 @@
+{
+  "name": "pluralsight-docker-test",
+  "version": "1.0.0",
+  "description": "A CI/CD Pipeline example with Docker",
+  "main": "index.js",
+  "scripts": {
+    "test": "node node_modules/mocha/bin/mocha **/*.specs.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "express": "^4.17.1",
+    "mocha": "^7.1.1"
+  }
+}
