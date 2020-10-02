@@ -8,6 +8,6 @@ RUN npm install --quiet
 
 COPY . .
 
-EXPOSE 80
+EXPOSE 8111
 
 CMD ["node", "./src/index.js"] 
