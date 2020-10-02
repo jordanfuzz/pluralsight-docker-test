@@ -36,6 +36,7 @@ Deploy:
   before_script:
     - echo ${REGISTRY_PASSWORD} | base64 -d | docker login -u ${REGISTRY_USER} --password-stdin
   script:
-    - docker-compose up -d --force-recreate
+    - docker pull ${CONTAINER_IMAGE}:${CI_COMMIT_SHORT_SHA}
+    - docker-compose up -d -p 80:80 --force-recreate
   tags:
     - production
