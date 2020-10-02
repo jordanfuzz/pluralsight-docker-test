@@ -2,6 +2,6 @@ version: '3.7'
 
 services:
   api:
-    build: .
+    image: jordanfuzz/megara:${CI_COMMIT_SHORT_SHA}
     ports:
       - '80:8080'
